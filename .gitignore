@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+.webflowrc.js
+/frontend/devlink/
+
+.DS_Store
+.vscode/
+
+frontend/node_modules
