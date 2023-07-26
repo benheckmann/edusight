@@ -6,7 +6,7 @@ const SquareButton = ({ text = "", link = "", isDark = false, color = null }) =>
   // workaround for tailwind not supporting string interpolation
   const colorClassesMapping = {
     purple: "text-midnight border-[#b696fa] bg-[#b696fa] hover:border-midnight",
-    yellow: "text-midnight border-cta-button-yellow bg-cta-button-yellow hover:border-midnight"
+    yellow: "text-midnight border-yellow bg-yellow hover:border-midnight"
   }
 
   const handleClick = () => {
