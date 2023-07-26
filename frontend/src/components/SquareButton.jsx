@@ -1,11 +1,12 @@
 const SquareButton = ({ text = "", link = "", isDark = false, color = null }) => {
-  const baseClasses = "text-[0.85rem] tracking-wide font-semibold px-4 py-3 mx-2 my-1 rounded-md border-2 duration-300 border-midnight"
-  const lightClasses = "text-midnight bg-transparent hover:bg-midnight hover:text-white"
-  const darkClasses = "text-white bg-midnight hover:bg-transparent hover:text-midnight"
+  const baseClasses = "text-[0.85rem] tracking-wide font-semibold px-4 py-3 mx-2 my-1 rounded-md border-2 duration-300"
+  const lightClasses = "border-midnight text-midnight bg-transparent hover:bg-midnight hover:text-white"
+  const darkClasses = "border-midnight text-white bg-midnight hover:bg-transparent hover:text-midnight"
 
   // workaround for tailwind not supporting string interpolation
   const colorClassesMapping = {
-    purple: "text-midnight border-[#b696fa] bg-[#b696fa] hover:border-midnight"
+    purple: "text-midnight border-[#b696fa] bg-[#b696fa] hover:border-midnight",
+    yellow: "text-midnight border-cta-button-yellow bg-cta-button-yellow hover:border-midnight"
   }
 
   const handleClick = () => {

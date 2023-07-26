@@ -7,11 +7,11 @@ const IntroHeader = () => {
       <div className="w-7/12 max-w-[1140px] text-center lg:w-8/12 xl:w-9/12 mb-2">
         <div>
           <div className="mt-2 mb-2 text-7xl font-bold leading-[80px] sm:text-6xl sm:leading-[70px] xs:text-5xl xs:leading-[64px] xxs:text-3xl xxs:leading-[48px]">
-            {"Build a Better Product Experience"}
+            {"Ihr Kompass für die individuelle Schülerentwicklung"}
           </div>
           <div className="my-8 opacity-100 text-xl leading-[34px] sm:leading-[28px]">
             {
-              "Go beyond analytics and elevate your product with user insights, delivered fast."
+              "Edusight analysiert handschriftliche Dokumente, um individuelle Einblicke für Lehrkräfte und Schüler zu liefern."
             }
             <br />
           </div>
@@ -20,7 +20,7 @@ const IntroHeader = () => {
                 text="Kostenlose Demo Buchen"
                 link={process.env.PUBLIC_URL}
                 isDark={true}
-                color="purple"
+                color="yellow"
               />
               <SquareButton text="Kontakt" link={process.env.PUBLIC_URL} />
           </div>

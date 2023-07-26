@@ -13,6 +13,8 @@ module.exports = {
       "midnight": "#0a2430",
       "edusight-purple": "#863DFD",
       "navbar-separator-grey": "#dedede",
+      "cta-button-yellow": "#f4d356",
+      "bg-yellow": "#fadd6e",
       // example of defining multiple color variants
       'tahiti': {
         100: '#cffafe',

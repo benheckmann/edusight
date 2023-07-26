@@ -23,20 +23,16 @@
 <line x1="119.5" y1="158" x2="119.5" y2="205" stroke="#0B2330" stroke-width="5"/>
 <line x1="162.746" y1="221.343" x2="117.322" y2="203.231" stroke="#0B2330" stroke-width="5"/>
 <line x1="118" y1="202.5" x2="166" y2="202.5" stroke="#0B2330" stroke-width="5"/>
-<path d="M1872 451C1883.16 436.27 1899.7 436.397 1911 451" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1921 451C1932.16 436.27 1948.7 436.397 1960 451" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1897 404C1908.16 389.27 1924.7 389.397 1936 404" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1970 451C1981.16 436.27 1997.7 436.397 2009 451" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1946 404C1957.16 389.27 1973.7 389.397 1985 404" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2019 451C2030.16 436.27 2046.7 436.397 2058 451" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1995 404C2006.16 389.27 2022.7 389.397 2034 404" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="1892" cy="426" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
-<circle cx="1941" cy="426" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
-<circle cx="1917" cy="379" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
-<circle cx="1990" cy="426" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
-<circle cx="1966" cy="379" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
-<circle cx="2039" cy="426" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
-<circle cx="2015" cy="379" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
+<path d="M1882 452C1893.16 437.27 1909.7 437.397 1921 452" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1946 452C1957.16 437.27 1973.7 437.397 1985 452" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2010 452C2021.16 437.27 2037.7 437.397 2049 452" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1913 404C1924.16 389.27 1940.7 389.397 1952 404" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1977 404C1988.16 389.27 2004.7 389.397 2016 404" stroke="#0B2330" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1902" cy="427" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
+<circle cx="1966" cy="427" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
+<circle cx="2030" cy="427" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
+<circle cx="1933" cy="379" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
+<circle cx="1997" cy="379" r="12.75" stroke="#0B2330" stroke-width="5.5"/>
 <rect x="1921.5" y="303.5" width="87" height="36" rx="4.5" stroke="#0B2330" stroke-width="5"/>
 <rect x="151.5" y="654.5" width="153" height="64" rx="5.5" stroke="#0B2330" stroke-width="5"/>
 <path d="M182.5 717.5C182.5 717.5 196.915 692.854 212.5 690.5C224.594 688.673 230.311 700.525 242.5 699.5C259.896 698.037 278.5 673 278.5 673" stroke="#0B2330" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -239,11 +235,11 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_33_866"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_33_866" result="shape"/>
 </filter>
-<filter id="filter1_d_33_866" x="297" y="96" width="1510" height="1056" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_33_866" x="307" y="106" width="1490" height="1036" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
-<feGaussianBlur stdDeviation="10"/>
+<feGaussianBlur stdDeviation="5"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_33_866"/>
