@@ -4,7 +4,7 @@ import SquareButton from "../components/SquareButton";
 const YellowBanner = () => {
   return (
     <div className="bg-yellow flex items-center justify-center text-midnight">
-      <div className="w-10/12 max-w-[1440px] my-16 md:text-center">
+      <div className="w-10/12 max-w-[1440px] my-16 text-center md:text-left">
         <div className="flex flex-col items-center md:flex-row md:items-start">
           <div className="text-4xl font-bold my-6 md:my-0 md:mr-16">
             {"Unsere Mission"}

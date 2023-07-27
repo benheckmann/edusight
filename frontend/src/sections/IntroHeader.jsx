@@ -6,8 +6,8 @@ const IntroHeader = () => {
     <div className="flex flex-col items-center justify-center mt-32 text-midnight">
       <div className="w-7/12 max-w-[1140px] text-center lg:w-8/12 xl:w-9/12 mb-2">
         <div>
-          <div className="mt-2 mb-2 text-7xl font-bold leading-[80px] sm:text-6xl sm:leading-[70px] xs:text-5xl xs:leading-[64px] xxs:text-3xl xxs:leading-[48px]">
-            {"Ihr Kompass für die individuelle Schülerentwicklung"}
+          <div className="mt-2 mb-2 text-7xl font-bold sm:leading-[85px] sm:text-6xl xs:text-5xl">
+            {"Die Zukunft des Lernens beginnt hier."}
           </div>
           <div className="my-8 opacity-100 text-xl leading-[34px] sm:leading-[28px]">
             {

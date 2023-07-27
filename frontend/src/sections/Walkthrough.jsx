@@ -1,5 +1,30 @@
-import React from "react";
-import RoundNumbering from "../components/RoundNumbering";
+const WalkthroughStep = ({
+  number,
+  headline,
+  description,
+  imageFileName,
+  marginBottom = true,
+}) => (
+  <div
+    className={
+      "w-10/12 max-w-[800px] flex items-center flex-col text-center" +
+      (marginBottom ? " mb-12" : "")
+    }
+  >
+    <div className="w-10 h-10 flex items-center justify-center text-2xl rounded-full font-sans border-midnight border-2">
+      {number}
+    </div>
+    <div className="mb-12">
+      <p className="my-4 text-2xl font-bold">{headline}</p>
+      <p className="text-xl">{description}</p>
+    </div>
+    <img
+      src={process.env.PUBLIC_URL + imageFileName}
+      className=""
+      alt="Overview UI"
+    />
+  </div>
+);
 
 const Walkthrough = () => {
   return (
@@ -11,26 +36,37 @@ const Walkthrough = () => {
           </div>
         </div>
       </div>
-      <div className="w-10/12 max-w-[600px] mb-12 flex items-center flex-col text-center">
-        <RoundNumbering number={1} />
-        <p className="my-4 text-2xl font-bold">Prüfungen Hochladen</p>
-        <p className="text-xl">Laden Sie benotete Prüfungen Ihrer Schüler*innen als Scan oder Foto in die Edusight Web-App hoch.</p>
-      </div>
-      <div className="w-10/12 max-w-[600px] mb-12 flex items-center flex-col text-center">
-        <RoundNumbering number={2} />
-        <p className="my-4 text-2xl font-bold">Analyse & Einsichten</p>
-        <p className="text-xl">Unsere fortschrittliche Handschrifterkennung und LLM-Technologie analysiert die hochgeladenen Dokumente vollautomatisch und erstellt detaillierte Schülerprofile.</p>
-      </div>
-      <div className="w-10/12 max-w-[600px] mb-12 flex items-center flex-col text-center">
-        <RoundNumbering number={3} />
-        <p className="my-4 text-2xl font-bold">Entwicklung verfolgen</p>
-        <p className="text-xl">Behalten Sie den Fortschritt Ihrer Schüler*innen im Blick und identifizieren Sie individuelle Stärken und Schwächen.</p>
-      </div>
-      <div className="w-10/12 max-w-[600px] mb-12 flex items-center flex-col text-center">
-        <RoundNumbering number={4} />
-        <p className="my-4 text-2xl font-bold">Dokumente digital sichern</p>
-        <p className="text-xl">Sichern Sie alle Prüfungen in der Cloud. Lehrerinnen und Schülerinnen können Dokumente jederzeit herunterladen und haben so alles an einem Ort.</p>
-      </div>
+      <WalkthroughStep
+        number={1}
+        headline="Prüfungen Hochladen"
+        description="Laden Sie benotete Prüfungen Ihrer Schüler*innen als Scan oder Foto in die Edusight Web-App hoch."
+        imageFileName="/Walkthrough - Prüfungen Hochladen.svg"
+        marginBottom={false}
+      />
+      <WalkthroughStep
+        number={2}
+        headline="Analyse & Einsichten"
+        description="Unsere fortschrittliche Handschrifterkennung und LLM-Technologie analysiert die hochgeladenen Dokumente vollautomatisch und erstellt detaillierte Schülerprofile."
+        imageFileName="/Walkthrough - Analyse & Einsichten v2.svg"
+      />
+      <WalkthroughStep
+        number={3}
+        headline="Individuelle Empfehlungen"
+        description="Auf Basis der Analysen empfielt Edusight gezielt Themen und Aufgabentypen für einzelne Schüler und die ganze Klasse."
+        imageFileName="/Walkthrough - Individuelle Empfehlungen.svg"
+      />
+      <WalkthroughStep
+        number={4}
+        headline="Schüler-Feedback einholen"
+        description="Mit Edusight können Sie direkt Feedback von Ihren Schüler*innen einholen, um Ihren Unterricht noch besser an die individuellen Bedürfnisse Ihrer Schüler*innen anzupassen."
+        imageFileName="/Walkthrough - Schüler-Feedback.svg"
+      />
+      <WalkthroughStep
+        number={5}
+        headline="Dokumente digital sichern"
+        description="Sichern Sie alle Prüfungen in der Cloud. Lehrerinnen und Schülerinnen können Dokumente jederzeit herunterladen und haben so alles an einem Ort."
+        imageFileName="/Walkthrough - Dokumente digital sichern.svg"
+      />
     </div>
   );
 };
