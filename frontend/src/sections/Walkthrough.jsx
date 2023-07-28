@@ -7,20 +7,21 @@ const WalkthroughStep = ({
 }) => (
   <div
     className={
-      "w-10/12 max-w-[800px] flex items-center flex-col text-center" +
-      (marginBottom ? " mb-12" : "")
+      "flex items-center flex-col text-center" + (marginBottom ? " mb-12" : "")
     }
   >
-    <div className="w-10 h-10 flex items-center justify-center text-2xl rounded-full font-sans border-midnight border-2">
-      {number}
-    </div>
-    <div className="mb-12">
-      <p className="my-4 text-2xl font-bold">{headline}</p>
-      <p className="text-xl">{description}</p>
+    <div className="w-10/12 max-w-[600px] flex flex-col items-center">
+      <div className="w-10 h-10 flex items-center justify-center text-2xl rounded-full font-sans border-midnight border-2">
+        {number}
+      </div>
+      <div className="mb-12">
+        <p className="my-4 text-2xl font-bold">{headline}</p>
+        <p className="text-xl">{description}</p>
+      </div>
     </div>
     <img
       src={process.env.PUBLIC_URL + imageFileName}
-      className=""
+      className="w-11/12 max-w-[900px]"
       alt="Overview UI"
     />
   </div>

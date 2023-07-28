@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationBar from "./components/NavigationBar";
 import IntroHeader from './sections/IntroHeader';
-import YellowBanner from "./sections/YellowBanner"
+import { YellowBannerOurMission, YellowBannerWhyEdusight } from "./sections/YellowBanner"
 import Walkthrough from './sections/Walkthrough';
 import Footer from './sections/Footer';
 import './App.css';
@@ -11,8 +11,9 @@ function LandingPage() {
     <>
       <NavigationBar />
       <IntroHeader />
-      <YellowBanner />
+      <YellowBannerOurMission />
       <Walkthrough />
+      <YellowBannerWhyEdusight />
       <Footer />
     </>
   );

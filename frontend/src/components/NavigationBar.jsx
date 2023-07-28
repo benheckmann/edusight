@@ -7,7 +7,7 @@ const NavigationBar = () => {
       className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
       <div className="flex flex-wrap items-center justify-between mx-auto py-1 px-8">
         <a href={process.env.PUBLIC_URL} className="flex items-center">
-        <img src={process.env.PUBLIC_URL + '/edusight-logo.svg'} className="h-7 mr-3" alt="Edusight Logo" />
+        <img src={process.env.PUBLIC_URL + '/edusight-logo.svg'} className="h-9 mr-3" alt="Edusight Logo" />
         </a>
         <div className="flex md:order-2">
           <SquareButton text="Anmelden" link={process.env.PUBLIC_URL} isDark={false}/>
