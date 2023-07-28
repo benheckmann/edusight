@@ -1,18 +1,29 @@
-import React from 'react';
-import SquareButton from "./SquareButton"
+import React from "react";
+import SquareButton from "./SquareButton";
 
 const NavigationBar = () => {
   return (
-    <nav
-      className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
-      <div className="flex flex-wrap items-center justify-between mx-auto py-1 px-8">
-        <a href={process.env.PUBLIC_URL} className="flex items-center">
-        <img src={process.env.PUBLIC_URL + '/edusight-logo.svg'} className="h-9 mr-3" alt="Edusight Logo" />
-        </a>
+    <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+      <div className="mx-auto max-w-screen-2xl flex flex-wrap items-center justify-between px-8 py-2 lg:py-4">
+          <a href={process.env.PUBLIC_URL} className="flex items-center">
+            <img
+              src={process.env.PUBLIC_URL + "/edusight-logo.svg"}
+              className="h-9 mr-3"
+              alt="Edusight Logo"
+            />
+          </a>
         <div className="flex md:order-2">
-          <SquareButton text="Anmelden" link={process.env.PUBLIC_URL} isDark={false}/>
+          <SquareButton
+            text="Anmelden"
+            link={process.env.PUBLIC_URL}
+            isDark={false}
+          />
           <div className="hidden sm:block">
-          <SquareButton text="Registrieren" link={process.env.PUBLIC_URL} isDark={true}/>
+            <SquareButton
+              text="Registrieren"
+              link={process.env.PUBLIC_URL}
+              isDark={true}
+            />
           </div>
           {/* <button data-collapse-toggle="navbar-sticky" type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -28,6 +39,6 @@ const NavigationBar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default NavigationBar;

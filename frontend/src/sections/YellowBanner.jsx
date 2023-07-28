@@ -10,7 +10,7 @@ const YellowBannerTemplate = ({ headline, content, button }) => {
             <div>{headline}</div>
             {button ? <div className="mt-8 lg:mt-12">{button}</div> : <></>}
           </div>
-          <div className="text-2xl w-8/12 leading-10">{content}</div>
+          <div className="text-2xl w-11/12 lg:w-8/12 leading-10">{content}</div>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@ export const YellowBannerWhyEdusight = () => (
   <YellowBannerTemplate
     headline="Warum Edusight?"
     content={
-      <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-flow-row grid-cols-1 gap-x-2 md:grid-cols-2">
         <Benefit
           headline="Einfache Handhabung"
           description="Unsere Plattform ist intuitiv und benutzerfreundlich gestaltet."
