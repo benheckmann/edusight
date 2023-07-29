@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     colors: {
@@ -14,6 +14,7 @@ module.exports = {
       "edusight-purple": "#863DFD",
       "navbar-separator-grey": "#dedede",
       "yellow": "#F2D15D",
+      "background-blue": "#e8ecf1",
       // example of defining multiple color variants
       'tahiti': {
         100: '#cffafe',

@@ -3,32 +3,26 @@ import SquareButton from "../components/SquareButton";
 
 const IntroHeader = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-32 text-midnight">
-      <div className="w-7/12 max-w-[1140px] text-center lg:w-8/12 xl:w-9/12 mb-2">
+    <div className="flex flex-col items-center justify-center mt-40 text-midnight">
+      <div className="max-w-[1140px] text-center w-10/12 md:w-8/12 mb-2">
         <div>
-          <div className="mt-2 mb-2 text-7xl font-bold sm:leading-[85px] sm:text-6xl xs:text-5xl">
+          <div className="mt-2 mb-2 text-4xl leading-tight md:leading-tight md:text-5xl font-bold">
             {"Die Zukunft des Lernens beginnt hier."}
           </div>
-          <div className="my-8 opacity-100 text-xl leading-[34px] sm:leading-[28px]">
+          <div className="my-8 opacity-100 text-xl leading-loose">
             {
               "Edusight analysiert handschriftliche Dokumente, um individuelle Einblicke für Lehrkräfte und Schüler zu liefern."
             }
-            <br />
           </div>
-          <div>
-              <SquareButton
-                text="Kostenlose Demo Buchen"
-                link={process.env.PUBLIC_URL}
-                isDark={true}
-                color="yellow"
-              />
-              <SquareButton text="Kontakt" link={process.env.PUBLIC_URL} />
+          <div className="my-10">
+            <SquareButton text="Demo Buchen" color="yellow" />
+            <SquareButton text="Kontakt" />
           </div>
         </div>
       </div>
       <img
         src={process.env.PUBLIC_URL + "/Landing Page Header Graphic.svg"}
-        className="w-[90vw] max-w-[1440px]"
+        className="w-full md:w-10/12 max-w-[1440px]"
         alt="Overview UI"
       />
     </div>

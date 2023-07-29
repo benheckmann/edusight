@@ -7,7 +7,7 @@ const WalkthroughStep = ({
 }) => (
   <div
     className={
-      "flex items-center flex-col text-center" + (marginBottom ? " mb-12" : "")
+      "flex items-center flex-col text-center" + (marginBottom ? " mb-16" : "")
     }
   >
     <div className="w-10/12 max-w-[600px] flex flex-col items-center">
@@ -29,8 +29,8 @@ const WalkthroughStep = ({
 
 const Walkthrough = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-12 text-midnight">
-      <div className="w-7/12 max-w-[1140px] text-center lg:w-8/12 xl:w-9/12 mb-2">
+    <div className="flex flex-col items-center justify-center mt-12 text-midnight mb-8">
+      <div className="w-10/12 md:w-8/12 max-w-[1140px] text-center lg:w-8/12 xl:w-9/12 mb-2">
         <div>
           <div className="my-12 text-4xl font-bold">
             {"Wie Sie mit Edusight mehr aus Ihrem Unterricht heraus holen"}
@@ -48,7 +48,7 @@ const Walkthrough = () => {
         number={2}
         headline="Analyse & Einsichten"
         description="Unsere fortschrittliche Handschrifterkennung und LLM-Technologie analysiert die hochgeladenen Dokumente vollautomatisch und erstellt detaillierte Schülerprofile."
-        imageFileName="/Walkthrough - Analyse & Einsichten v2.svg"
+        imageFileName="/Walkthrough - Analyse & Einsichten v3.svg"
       />
       <WalkthroughStep
         number={3}
