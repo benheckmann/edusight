@@ -48,7 +48,7 @@ const Walkthrough = () => {
         number={2}
         headline="Analyse & Einsichten"
         description="Unsere fortschrittliche Handschrifterkennung und LLM-Technologie analysiert die hochgeladenen Dokumente vollautomatisch und erstellt detaillierte Schülerprofile."
-        imageFileName="/Walkthrough - Analyse & Einsichten v3.svg"
+        imageFileName="/Walkthrough - Analyse & Einsichten v3.png"
       />
       <WalkthroughStep
         number={3}
