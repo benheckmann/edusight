@@ -15,7 +15,7 @@ const NavigationBar = () => {
         <div className="hidden md:block">
           <BorderLessButton text="Features" />
           <BorderLessButton text="Über Uns" />
-          <BorderLessButton text="Preise" />
+          <BorderLessButton text="Blog" />
         </div>
         <div className="flex md:order-2">
           <div>

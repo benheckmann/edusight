@@ -18,13 +18,13 @@ const Footer = () => (
             </h2>
             <ul class="text-gray-400 font-medium">
               <li class="mb-4">
-                <a href="mailto:hallo@edusight.de" class="hover:underline ">
-                  hallo@edusight.de
+                <a href="mailto:info@edusight.de" class="hover:underline ">
+                  info@edusight.de
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a class="hover:underline">+49 176 43810790</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>

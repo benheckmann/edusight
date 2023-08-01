@@ -35,7 +35,7 @@ const ContactAndDevelopmentInfo = () => {
             <ul className="list-disc m-5">
               <li>
                 E-Mail:{" "}
-                <a href="mailto:hallo@edusight.com">hallo@edusight.com</a>
+                <a href="mailto:info@edusight.com">info@edusight.com</a>
               </li>
               <li>Telefon: +49 176 43810 790</li>
             </ul>
