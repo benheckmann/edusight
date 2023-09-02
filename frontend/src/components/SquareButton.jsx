@@ -4,6 +4,7 @@ const SquareButton = ({
   isDark = false,
   color = null,
   margin = "mx-2 my-1",
+  onClick = null, // for complex behaviour; will override link attribute
 }) => {
   const baseClasses =
     "text-[0.85rem] tracking-wide font-normal px-4 py-3 rounded-md border-2 duration-300 " +
@@ -19,7 +20,7 @@ const SquareButton = ({
     yellow: "text-midnight border-yellow bg-yellow hover:border-midnight",
   };
 
-  const handleClick = () => {
+  const handleClickForLink = () => {
     window.location.href = link;
   };
 
@@ -28,7 +29,7 @@ const SquareButton = ({
       className={`${baseClasses} ${
         color ? colorClassesMapping[color] : isDark ? darkClasses : lightClasses
       }`}
-      onClick={handleClick}
+      onClick={onClick ? onClick : handleClickForLink}
     >
       {text}
     </button>

@@ -1,7 +1,7 @@
 import BorderLessButton from "./BorderLessButton";
 import SquareButton from "./SquareButton";
 
-const NavigationBar = () => {
+const NavigationBar = ({ setShowSignInModal }) => {
   return (
     <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
       <div className="mx-auto max-w-screen-2xl flex flex-wrap items-center justify-between px-8 py-2 lg:py-3">
@@ -19,7 +19,12 @@ const NavigationBar = () => {
         </div>
         <div className="flex md:order-2">
           <div>
-            <SquareButton text="Anmelden" isDark={false} margin="my-1" />
+            <SquareButton
+              text="Anmelden"
+              isDark={false}
+              margin="my-1"
+              onClick={() => setShowSignInModal(true)}
+            />
           </div>
           <div className="hidden md:block">
             <SquareButton text="Kontakt" isDark={true} margin="ml-3 my-1" />

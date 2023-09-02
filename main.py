@@ -17,7 +17,10 @@ import os
 load_dotenv()  # take environment variables from .env.
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://127.0.0.1:5000"]}})
+CORS(
+    app,
+    resources={r"/*": {"origins": ["http://localhost:3000", "http://127.0.0.1:5000"]}},
+)
 
 # configuration
 mongo_uri = os.getenv("MONGO_URI")
@@ -25,18 +28,20 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 # Initialize MongoDB client and database
 client = MongoClient(mongo_uri)
-db = client['general']
+db = client["general"]
 
 # extensions
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = "login"
 
+
 class User(UserMixin):
     def __init__(self, email, password, _id=None):
         self._id = _id
         self.email = email
         self.password = password
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -45,14 +50,23 @@ def load_user(user_id):
         return None
     return User(user["email"], user["password"], str(user["_id"]))
 
+
 @app.route("/hello-world")
 def hello_world():
     return jsonify(message="Hello, World!")
+
 
 @app.route("/test-db")
 def test_db():
     collections = db.list_collection_names()
     return jsonify({"collections": collections})
+
+
+@app.route("/load-user-data", methods=["GET"])
+@login_required
+def load_user_data():
+    return jsonify(load_user(current_user.get_id()))
+
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -62,6 +76,7 @@ def register():
 
     db.users.insert_one({"email": email, "password": hashed_password})
     return jsonify(message="User registered."), 201
+
 
 @app.route("/login", methods=["POST"])
 def login():
@@ -76,11 +91,13 @@ def login():
     login_user(user_obj)
     return jsonify(message="Logged in successfully."), 200
 
+
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
     return jsonify(message="Logged out successfully."), 200
+
 
 @app.route("/reset_password", methods=["POST"])
 @login_required
